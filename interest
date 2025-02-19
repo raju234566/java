@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the principal amount (P): ");
+        double P = scanner.nextDouble();
+
+        System.out.print("Enter the rate of interest (R): ");
+        double R = scanner.nextDouble();  e
+
+        System.out.print("Enter the time period (T) in years: ");
+        double T = scanner.nextDouble();  
+
+        double SI = (P * R * T) / 100;
+
+        // Calculate Total Amount (Principal + Interest)
+        double TotalAmount = P + SI;
+
+        System.out.println("Simple Interest = " + SI);
+        System.out.println("Total Amount = " + TotalAmount);
+
+        scanner.close();
+    }
+}
